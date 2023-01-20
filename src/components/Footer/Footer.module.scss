@@ -1,0 +1,19 @@
+@import 'Styles/variables.scss';
+
+.footerMain {
+  display: flex;
+  justify-content: center;
+  margin-top: 8.8125rem;
+  text-align: center;
+  // margin-bottom: 1.75rem;
+
+  &_text {
+    color: map-get($grey, 90);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footerMain {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+.gratificationMain {
+  height: 100vh;
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.3125rem;
+  &_press {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 12px;
+    color: white !important;
+  }
+  &_header {
+    color: white !important;
+    font-size: 20px;
+  }
+  &_subHeader {
+    color: #8c8c8c !important;
+  }
+  &_avatarSelection {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.8rem;
+    &_selected {
+      height: 110px;
+      width: 110px;
+      border: 3px solid #f14687;
+      &_check {
+        position: relative;
+        top: -125px;
+        left: 90px;
+      }
+    }
+    &_unselected {
+      height: 110px;
+      width: 110px;
+    }
+  }
+}

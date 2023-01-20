@@ -1,0 +1,67 @@
+.confirm {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  &_heading {
+    margin: 0 auto;
+    @media screen and (max-width: 600px) {
+      font-weight: 400 !important;
+      font-size: 14px !important;
+      line-height: 20px !important;
+      text-align: center !important;
+      letter-spacing: 0.26px !important;
+      //   color: #404040 !important ;
+    }
+  }
+
+  &_action {
+    &Container {
+      &Desktop {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+
+        & > * {
+          flex: 1;
+        }
+
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
+      }
+
+      &Mobile {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 24px;
+
+        & > * {
+          flex: 1;
+        }
+
+        @media screen and (min-width: 600px) {
+          display: none;
+        }
+      }
+    }
+
+    &Secondary {
+      margin-right: 12px;
+      height: 54px !important;
+      @media screen and (max-width: 600px) {
+        width: 158px !important;
+      }
+    }
+    &Primary {
+      height: 54px !important;
+      @media screen and (max-width: 600px) {
+        width: 158px !important;
+      }
+    }
+  }
+}

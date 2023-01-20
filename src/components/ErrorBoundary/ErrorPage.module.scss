@@ -1,0 +1,24 @@
+@import 'Styles/variables.scss';
+
+.error {
+  &_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  }
+
+  &_Heading {
+    margin-top: 16px;
+    margin-bottom: 2px;
+  }
+
+  &_Description {
+    color: map-get($grey, 100);
+    margin-bottom: 16px;
+  }
+}

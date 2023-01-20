@@ -1,0 +1,45 @@
+@import 'Styles/variables.scss';
+
+.success {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+
+    @media screen and (max-width: 600px) {
+      height: 100vh;
+      margin-top: 120px;
+      justify-content: unset;
+    }
+  }
+
+  &_img {
+    width: 116px;
+    height: 116px;
+    margin-top: 40px;
+  }
+
+  &_text {
+    width: 80%;
+    margin-top: 54px;
+
+    @media screen and (max-width: 600px) {
+      width: 90%;
+      font-size: 18px !important;
+      line-height: 24px !important;
+      letter-spacing: 0.16px !important;
+    }
+  }
+
+  &_subText {
+    width: 90%;
+    margin-top: 24px;
+    color: map-get($grey, 90);
+
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
+  }
+}

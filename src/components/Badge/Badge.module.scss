@@ -1,0 +1,15 @@
+@import 'Styles/variables.scss';
+
+.badgeMain {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  align-items: center;
+  height: 54px;
+
+  img {
+    margin-right: 1rem;
+  }
+}

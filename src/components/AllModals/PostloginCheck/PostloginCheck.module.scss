@@ -1,0 +1,127 @@
+@import 'Styles/variables.scss';
+
+.postlogin {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 600px) {
+      padding: 16px;
+    }
+  }
+
+  &_heading {
+    margin: 0 auto;
+    @media screen and (max-width: 600px) {
+      text-align: left !important;
+      font-size: 20px !important;
+      line-height: 28px !important;
+      letter-spacing: 0.16px !important;
+      width: fit-content;
+      margin: 0;
+    }
+  }
+
+  &_textContainer {
+    margin: 24px 0 32px;
+    display: block;
+    @media screen and (max-width: 600px) {
+      border-radius: 8px;
+      padding: 8px;
+      box-sizing: border-box;
+      display: none;
+    }
+  }
+
+  &_MobiletextContainer {
+    margin: 24px 0 32px;
+    display: none;
+    @media screen and (max-width: 600px) {
+      border-radius: 8px;
+      padding: 8px;
+      box-sizing: border-box;
+      display: block;
+    }
+  }
+
+  &_subDesc {
+    @media screen and (max-width: 600px) {
+      font-size: 12px !important;
+      line-height: 16px !important;
+      letter-spacing: 0.32px !important;
+      width: fit-content !important;
+      text-align: left !important;
+    }
+  }
+
+  &_subText {
+    margin: 24px auto 0px;
+    @media screen and (max-width: 600px) {
+      margin: 24px 0px 0px;
+    }
+  }
+
+  &_userDetails {
+    &Container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 40px;
+
+      @media screen and (max-width: 600px) {
+        margin-bottom: 32px;
+      }
+
+      & > * {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 600px) {
+          align-items: flex-start;
+          flex: 1;
+          padding: 8px;
+        }
+      }
+    }
+
+    &Input {
+      &Email {
+        color: map-get($pink, 100) !important;
+      }
+      &Contact {
+        @media screen and (max-width: 600px) {
+          color: map-get($pink, 100) !important;
+        }
+      }
+    }
+  }
+
+  &_action {
+    &Container {
+      display: flex;
+      justify-content: space-between;
+
+      & > * {
+        flex: 1;
+      }
+    }
+
+    &Secondary {
+      margin-right: 12px;
+      height: 54px !important;
+      @media screen and (max-width: 600px) {
+        width: 158px !important;
+      }
+    }
+    &Primary {
+      height: 54px !important;
+      @media screen and (max-width: 600px) {
+        width: 158px !important;
+      }
+    }
+  }
+}

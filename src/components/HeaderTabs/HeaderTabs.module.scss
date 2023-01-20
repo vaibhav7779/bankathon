@@ -1,0 +1,25 @@
+@import "Styles/variables.scss";
+
+.tabContainer {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15%;
+  z-index: 1;
+  &_tabs {
+    margin-top: 22px;
+    padding: 8px;
+    display: flex;
+    width: 6.25rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_tabSelected {
+    color: map-get($pink, 100);
+    border-bottom: 2px solid map-get($pink, 100);
+  }
+  &_tabs:hover {
+    color: map-get($pink, 100);
+    cursor: pointer;
+  }
+}
