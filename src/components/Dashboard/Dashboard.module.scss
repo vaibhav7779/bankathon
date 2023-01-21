@@ -44,9 +44,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
         color: #ab7fc3;
+        div {
+          font-size: 12px;
+        }
+      }
+      &_success {
+        border-radius: 8px;
+        background: linear-gradient(0deg, #f4ebf9, #f4ebf9),
+        linear-gradient(0deg, #ab7fc3, #ab7fc3);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        color: #ab7fc3;
+        height: 56px;
         div {
           font-size: 12px;
         }

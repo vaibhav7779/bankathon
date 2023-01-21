@@ -16,10 +16,14 @@ import {
   DASHBOARD_FORM_PAGES,
   DASHBOARD_FORM_STATE,
 } from "./Dashboard.constants";
-import { useNavigate, } from "react-router";
+import { useNavigate } from "react-router";
+
+
 
 const Dashboard = () => {
-  const [pageState, setPageState] = useState(DASHBOARD_FORM_STATE.UPLOAD_PIC);
+  const queryParams = window.location.href.split('?');
+  const dashboardValue = queryParams[1]==="success" ? DASHBOARD_FORM_STATE.UPLOAD_SUCCESS : DASHBOARD_FORM_STATE.STUDENT_NAME
+  const [pageState, setPageState] = useState(dashboardValue);
   const navigate = useNavigate();
 
   const handlePageState = (state: any) => {
@@ -29,7 +33,7 @@ const Dashboard = () => {
   };
 
   const handleUpload = () => {
-    console.log("VV")
+    navigate("/upload")
   }
 
   return (
@@ -96,6 +100,13 @@ const Dashboard = () => {
             <div className={styles.dashboardMain_bottom_main_uploadBox}>
               <img src={icons.Camera} />
               <div onClick={(e) => handleUpload()}>CLICK AN IMAGE OR UPLOAD</div>
+            </div>
+          )}
+          {pageState === DASHBOARD_FORM_STATE.UPLOAD_SUCCESS && (
+            <div className={styles.dashboardMain_bottom_main_success}>
+              <img src={icons.Camera} />
+              <div onClick={(e) => handleUpload()}>collegeidproof.jpeg</div>
+              <img src={icons.Cross} />
             </div>
           )}
           <Button

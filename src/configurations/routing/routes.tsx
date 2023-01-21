@@ -1,5 +1,5 @@
 import { DashboardPage } from "Pages/DashboardPages";
-import { PhotoUpload } from "Pages/PhotoUpload";
+import  PhotoUpload from "Pages/PhotoUpload";
 
 import { ROUTES } from "constants/routes";
 
@@ -23,5 +23,10 @@ export const APP_ROUTES: RouteObj[] = [
     path: ROUTES.PHOTOUPLOAD,
     exact: true,
     element: <PhotoUpload />,
+  },
+  {
+    path: ROUTES.PHOTOSUCCESS,
+    exact: true,
+    element: <DashboardPage />,
   },
 ];

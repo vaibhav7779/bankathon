@@ -1,0 +1,11 @@
+
+export const ImagePreview = ({ dataUri, isFullscreen }) => {
+  return (
+    <div>
+      <img src={dataUri} width="100px" />
+    </div>
+  );
+};
+
+
+export default ImagePreview;

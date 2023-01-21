@@ -6,6 +6,7 @@ export const DASHBOARD_FORM_STATE = {
   MOBILE_NUMBER: "MOBILE_NUMBER",
   EMAIL: "EMAIL",
   UPLOAD_PIC: "UPLOAD_PIC",
+  UPLOAD_SUCCESS: "UPLOAD_SUCCESS",
 };
 
 export const DASHBOARD_FORM_PAGES = {
@@ -67,6 +68,14 @@ export const DASHBOARD_FORM_PAGES = {
       subHeading: "Upload a picture of your college ID",
       primaryButtonProps: {
         text: "That's me!",
+        path: ROUTES.GRATIFICATION,
+      },
+    },
+    [DASHBOARD_FORM_STATE.UPLOAD_SUCCESS]: {
+      heading: "WE NEED ‘EM DOCS",
+      subHeading: "Upload a picture of your college ID",
+      primaryButtonProps: {
+        text: "Submit",
         path: ROUTES.GRATIFICATION,
       },
     },

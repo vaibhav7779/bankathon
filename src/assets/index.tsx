@@ -11,6 +11,7 @@ import AvatarEight from "./AvatarEight.svg";
 import AvatarNine from "./AvatarNine.svg";
 import AvatarTen from "./AvatarTen.svg";
 import Circle from "./Circle.svg";
+import Cross from "./Cross.svg";
 
 export const icons = {
   Avatar,
@@ -26,4 +27,5 @@ export const icons = {
   AvatarNine,
   AvatarTen,
   Circle,
+  Cross
 };
